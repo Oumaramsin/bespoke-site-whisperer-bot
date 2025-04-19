@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,19 +9,19 @@ const Index = () => {
   const clients = [
     {
       name: "La Banque Postale",
-      logo: "/path/to/banque-postale-logo.png",
+      logo: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
     },
     {
       name: "France Travail",
-      logo: "/path/to/france-travail-logo.png",
+      logo: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     },
     {
       name: "COVEA",
-      logo: "/path/to/covea-logo.png",
+      logo: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
     },
     {
       name: "Société Générale",
-      logo: "/path/to/societe-generale-logo.png",
+      logo: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     }
   ];
 

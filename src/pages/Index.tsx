@@ -1,10 +1,29 @@
-
+import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Database, Users, Code, Briefcase, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
+  const clients = [
+    {
+      name: "La Banque Postale",
+      logo: "/path/to/banque-postale-logo.png",
+    },
+    {
+      name: "France Travail",
+      logo: "/path/to/france-travail-logo.png",
+    },
+    {
+      name: "COVEA",
+      logo: "/path/to/covea-logo.png",
+    },
+    {
+      name: "Société Générale",
+      logo: "/path/to/societe-generale-logo.png",
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
       {/* Hero Section */}
@@ -161,6 +180,30 @@ const Index = () => {
               </Button>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Clients Section */}
+      <div className="container mx-auto px-4 py-12 md:py-20">
+        <div className="bg-card rounded-xl p-8 md:p-12 shadow-sm">
+          <h2 className="text-3xl font-bold text-center mb-10">Nos Clients Principaux</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center opacity-80 hover:opacity-100 transition-opacity">
+            {clients.map((client, index) => (
+              <div 
+                key={index} 
+                className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
+              >
+                <img 
+                  src={client.logo} 
+                  alt={`Logo de ${client.name}`} 
+                  className="max-h-16 max-w-full object-contain"
+                />
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-muted-foreground mt-8">
+            Une expertise reconnue par des acteurs majeurs du secteur bancaire et de l'emploi
+          </p>
         </div>
       </div>
     </div>

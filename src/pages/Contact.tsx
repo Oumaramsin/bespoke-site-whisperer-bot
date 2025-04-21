@@ -82,8 +82,8 @@ const Contact = () => {
             </CardHeader>
             <CardContent>
               <CardDescription className="text-sm">
-                <a href="mailto:contact@ramsin.fr" className="text-primary hover:underline">
-                  contact@ramsin.fr
+                <a href="mailto:ramsinconseil@gmail.com" className="text-primary hover:underline">
+                  ramsinconseil@gmail.com
                 </a>
               </CardDescription>
             </CardContent>
@@ -97,7 +97,7 @@ const Contact = () => {
             <CardContent>
               <CardDescription className="text-sm">
                 <a href="tel:+33123456789" className="text-primary hover:underline">
-                  +33 (0)1 23 45 67 89
+                  +33 (0)7 61 51 88 90
                 </a>
               </CardDescription>
             </CardContent>
@@ -149,7 +149,7 @@ const Contact = () => {
                       <FormItem>
                         <FormLabel>Email*</FormLabel>
                         <FormControl>
-                          <Input type="email" placeholder="votre@email.com" {...field} />
+                          <Input type="email" placeholder="Votre email" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>

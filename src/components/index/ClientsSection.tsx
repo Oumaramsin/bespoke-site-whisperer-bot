@@ -10,19 +10,19 @@ const ClientsSection = () => {
   const clients: Client[] = [
     {
       name: "La Banque Postale",
-      logo: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      logo: "public/logos/banque-postale.png",
     },
     {
       name: "France Travail",
-      logo: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+      logo: "public/logos/france-travail.png",
     },
     {
       name: "COVEA",
-      logo: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+      logo: "public/logos/covea.png",
     },
     {
       name: "Société Générale",
-      logo: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      logo: "public/logos/societe-generale.png",
     }
   ];
 
